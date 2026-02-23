@@ -36,11 +36,11 @@ Tracks the key phases of my journey as defined in the website's learning path:
 
 ## 🌐 Live Website
 Visit the live site to explore the structured content:
-👉 **[Your Website URL]**
+👉 **[From Zero to Expert Technical Writer](https://thinkingreedjl.github.io/mypathtotw/)**
 
 ## 📫 Connect & Contribute
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Email**: [Your Email Address]
+- **LinkedIn**: [Jeremy Lv](https://linkedin.com/in/jeremy-l-65042890)
+- **Email**: [thinkingreedjl@163.com](mailto:thinkingreedjl@163.com)
 
 This repository is primarily a personal learning journal, but constructive feedback on the documentation samples is always welcome!
 
