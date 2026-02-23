@@ -85,7 +85,7 @@ theme:
 # Repository Configuration
 repo_name: thinkingreedjl/mypathtotw
 repo_url: https://github.com/thinkingreedjl/mypathtotw/
-edit_uri: edit/master/docs/
+edit_uri: edit/main/docs/
 
 # Plugins
 plugins:
@@ -101,7 +101,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/thinkingreedjl
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/jeremylv
+      link: https://linkedin.com/in/jeremy-l-65042890
 
 # Markdown Extensions
 markdown_extensions:
