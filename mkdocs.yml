@@ -1,0 +1,116 @@
+# Site Metadata (核心站点信息)
+site_name: From Zero to Expert Technical Writer
+site_description: A curated learning path to master various essential skills for an Expert Technical Writer
+site_url: https://thinkingreedjl.github.io/mypathtotw/
+site_author: Jeremy Lv
+
+# Navigation Structure (精简+全英文导航结构)
+nav:
+  - Home: index.md
+  - Foundations:
+    - Overview: 01-Foundations/index.md
+    - What is a Technical Writer?: 01-Foundations/what-is-a-technical-writer.md
+    - Core Competency Framework: 01-Foundations/core-competency-framework.md
+    - Career Progression: 01-Foundations/career-progression.md
+  - Core Technical Writing Skills:
+    - Overview: 02-Core-Skills/index.md
+    - Writing Fundamentals:
+      - Style & Grammar Guidelines: 02-Core-Skills/writing-fundamentals/style-grammar-guidelines.md
+      - Audience Analysis & Content Strategy: 02-Core-Skills/writing-fundamentals/audience-analysis.md
+      - Structured Writing & Information Architecture: 02-Core-Skills/writing-fundamentals/structured-writing.md
+      - Terminology Management: 02-Core-Skills/writing-fundamentals/terminology-management.md
+    - Technical Literacy:
+      - Basic Programming Concepts: 02-Core-Skills/technical-literacy/basic-programming.md
+      - API Documentation (REST/GraphQL): 02-Core-Skills/technical-literacy/api-documentation.md
+      - Software Development Lifecycle (SDLC): 02-Core-Skills/technical-literacy/sdlc-basics.md
+    - Documentation Tools:
+      - Static Site Generators (MkDocs/Docusaurus): 02-Core-Skills/tools/static-site-generators.md
+      - Version Control (Git/GitHub): 02-Core-Skills/tools/version-control.md
+      - Authoring Tools (Asciidoctor/XML): 02-Core-Skills/tools/authoring-tools.md
+      - Visual & Video Tools: 02-Core-Skills/tools/visual-video-tools.md
+    - Content Delivery:
+      - Multi-Format Publishing (PDF/HTML): 02-Core-Skills/delivery/multi-format-publishing.md
+      - Localization & Internationalization: 02-Core-Skills/delivery/localization-i18n.md
+      - Documentation Accessibility (WCAG): 02-Core-Skills/delivery/accessibility.md
+  - Advanced Expert Skills:
+    - Overview: 03-Advanced-Skills/index.md
+    - Documentation Strategy & Governance: 03-Advanced-Skills/docs-strategy-governance.md
+    - Automated Documentation (DITA/OpenAPI): 03-Advanced-Skills/automated-documentation.md
+    - Content Reuse & Modular Writing: 03-Advanced-Skills/content-reuse.md
+    - Technical Content Review & QA: 03-Advanced-Skills/content-review-qa.md
+    - Stakeholder Communication & Collaboration: 03-Advanced-Skills/stakeholder-communication.md
+  - Practical Projects:
+    - Overview: 04-Projects/index.md
+    - "Project 1: API Reference Documentation": 04-Projects/api-reference-docs.md
+    - "Project 2: End-User Manual (Software)": 04-Projects/end-user-manual.md
+    - "Project 3: Documentation Style Guide Creation": 04-Projects/style-guide-creation.md
+    - "Project 4: Docs Migration & Refactoring": 04-Projects/docs-migration-refactoring.md
+  - Industry Resources:
+    - Overview: 05-Resources/index.md
+    - Top Technical Writing Examples: 05-Resources/top-docs-examples.md
+    - Industry Communities & Certifications: 05-Resources/communities-certifications.md
+    - Job Hunting & Portfolio Building: 05-Resources/job-hunting-portfolio.md
+
+# Theme Configuration (Material主题配置)
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sidebar
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - content.action.edit
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+# Repository Configuration
+repo_name: thinkingreedjl/mypathtotw
+repo_url: https://github.com/thinkingreedjl/mypathtotw/
+edit_uri: edit/main/docs/
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+ 
+  - minify:
+      minify_html: true
+
+# Extra Configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/thinkingreedjl
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/jeremylv
+
+# Markdown Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - attr_list
+  - md_in_html
