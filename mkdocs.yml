@@ -85,7 +85,7 @@ theme:
 # Repository Configuration
 repo_name: thinkingreedjl/mypathtotw
 repo_url: https://github.com/thinkingreedjl/mypathtotw/
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
 
 # Plugins
 plugins:
