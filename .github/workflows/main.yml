@@ -1,0 +1,38 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # 推送到main分支时自动触发部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 使用Ubuntu系统运行
+    steps:
+      # 步骤1：拉取仓库代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 拉取所有提交记录（适配git-revision-date插件）
+
+      # 步骤2：配置Python环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"  # 稳定兼容MkDocs的版本
+
+      # 步骤3：安装MkDocs及依赖
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-minify-plugin
+
+      # 步骤4：构建MkDocs静态文件
+      - name: Build MkDocs site
+        run: mkdocs build
+
+      # 步骤5：部署到GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site  # MkDocs构建产物的目录（固定）
