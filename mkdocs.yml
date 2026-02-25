@@ -70,7 +70,6 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs
-    - navigation.sidebar
     - navigation.sections
     - search.suggest
     - search.highlight
@@ -82,6 +81,9 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
+# 加载 Material Icons 无需外部 CDN（适配内置图标方案）
+extra_css: []
+
 # Repository Configuration
 repo_name: thinkingreedjl/mypathtotw
 repo_url: https://github.com/thinkingreedjl/mypathtotw/
@@ -91,7 +93,6 @@ edit_uri: edit/main/docs/
 plugins:
   - search:
       lang: en
- 
   - minify:
       minify_html: true
 
@@ -103,14 +104,20 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/jeremy-l-65042890
 
-# Markdown Extensions
+# Markdown Extensions（核心修复：更新 emoji 引用路径）
 markdown_extensions:
   - admonition
-  - codehilite:
+  - pymdownx.highlight:
       guess_lang: false
+      use_pygments: true
+      pygments_style: monokai
+  - pymdownx.superfences
   - toc:
       permalink: true
   - tables
   - footnotes
   - attr_list
   - md_in_html
+  - pymdownx.emoji:  # 修复弃用警告的核心配置
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
