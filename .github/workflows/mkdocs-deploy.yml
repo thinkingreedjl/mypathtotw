@@ -1,0 +1,39 @@
+# 工作流执行的任务
+jobs:
+  deploy:
+    # 指定运行环境（GitHub 提供的 Ubuntu 服务器）
+    runs-on: ubuntu-latest
+
+    steps:
+      # 第一步：拉取 GitHub 仓库的代码到服务器
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # 拉取所有提交记录（确保 MkDocs 能正确生成历史版本）
+          fetch-depth: 0
+
+      # 第二步：设置 Python 环境（MkDocs 基于 Python）
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          # 指定 Python 版本（3.8+ 都可以）
+          python-version: "3.10"
+          # 缓存 Python 依赖，加快下次运行速度
+          cache: "pip"
+
+      # 第三步：安装 MkDocs 及相关依赖
+      - name: Install dependencies
+        run: |
+          # 安装 MkDocs 核心包和 Material 主题（如果用其他主题，加在这里）
+          pip install mkdocs mkdocs-material
+          # 如果你的项目有额外依赖（比如 mkdocs-git-revision-date-plugin），在这里添加：
+          # pip install mkdocs-git-revision-date-plugin
+
+      # 第四步：构建并部署 MkDocs 网站到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # GitHub 自动生成的令牌，用于推送 gh-pages 分支（无需手动配置）
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 指定 MkDocs 构建的输出目录（固定为 site）
+          publish_dir: ./site
