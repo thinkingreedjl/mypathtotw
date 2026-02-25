@@ -23,11 +23,12 @@ jobs:
       # 3. 安装依赖（跳过缓存，避免残留旧版本）
       - name: Install dependencies without conflict
         run: |
-          # 升级 pip 并清理缓存
           python -m pip install --upgrade pip
           pip cache purge
-          # 安装无冲突的版本（直接指定，不用 requirements.txt 避免额外问题）
-          pip install mkdocs==1.4.3 mkdocs-material==8.5.11
+          # 升级到支持 emoji 扩展的版本
+          pip install mkdocs==1.5.3 mkdocs-material==9.4.8
+          # 安装 emoji 扩展依赖
+          pip install mkdocs-material[emoji]
 
       # 4. 强制部署（用 MkDocs 原生命令，最稳定）
       - name: Deploy to GitHub Pages
