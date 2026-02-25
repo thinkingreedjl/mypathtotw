@@ -1,3 +1,0 @@
-# 无冲突的版本组合（MkDocs + Material 主题）
-mkdocs==1.4.3
-mkdocs-material==8.5.11
