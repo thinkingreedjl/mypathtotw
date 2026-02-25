@@ -1,4 +1,4 @@
-# MkDocs 自动部署（适配 1.x 版本，解决 2.0 兼容问题）
+# MkDocs 自动部署（无依赖冲突版）
 name: MkDocs Auto Deploy
 
 on:
@@ -10,32 +10,27 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 拉取代码
+      # 1. 拉取代码
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      # 设置 Python 环境（3.9 更适配旧版本 MkDocs）
+      # 2. 设置 Python 环境（3.8 兼容性最好）
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.9"
-          cache: "pip"
-          cache-dependency-path: "requirements.txt"
+          python-version: "3.8"
 
-      # 安装兼容版本的依赖（强制指定版本，避免自动升级）
-      - name: Install compatible dependencies
+      # 3. 安装依赖（跳过缓存，避免残留旧版本）
+      - name: Install dependencies without conflict
         run: |
+          # 升级 pip 并清理缓存
           python -m pip install --upgrade pip
-          # 强制安装 requirements.txt 里的版本，不自动升级
-          pip install --force-reinstall -r requirements.txt
+          pip cache purge
+          # 安装无冲突的版本（直接指定，不用 requirements.txt 避免额外问题）
+          pip install mkdocs==1.4.3 mkdocs-material==8.5.11
 
-      # 构建并部署（用原生 gh-deploy，更稳定）
+      # 4. 强制部署（用 MkDocs 原生命令，最稳定）
       - name: Deploy to GitHub Pages
         env:
-          # 授权令牌
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # 强制部署，忽略版本警告（已锁定兼容版本）
-          mkdocs gh-deploy --force --verbose
+        run: mkdocs gh-deploy --force

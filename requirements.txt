@@ -1,4 +1,3 @@
-# 锁定 MkDocs 1.x 最新稳定版（避免 2.0 不兼容问题）
-mkdocs==1.5.3
-# 匹配 MkDocs 1.x 的 Material 主题版本
-mkdocs-material==9.5.26
+# 无冲突的版本组合（MkDocs + Material 主题）
+mkdocs==1.4.3
+mkdocs-material==8.5.11
