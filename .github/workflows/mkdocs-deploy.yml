@@ -1,12 +1,10 @@
 # MkDocs 自动部署到 GitHub Pages 的工作流配置
 name: MkDocs Auto Deploy
 
-# 正确的触发条件配置（解决 No event triggers defined 报错）
+# 正确的触发条件配置
 on:
-  # 推送到 main 分支时自动触发
   push:
     branches: ["main"]
-  # 允许手动触发（在 Actions 页面点 Run workflow）
   workflow_dispatch:
 
 # 工作流执行的任务
@@ -14,29 +12,37 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 拉取仓库代码
+      # 1. 拉取仓库代码（包含 requirements.txt）
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # 拉取所有提交记录，避免构建缺失文件
 
-      # 设置 Python 环境
+      # 2. 设置 Python 环境（启用 pip 缓存，适配 requirements.txt）
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.10"
-          cache: "pip"
+          cache: "pip"  # 现在有 requirements.txt，缓存可正常生效
+          cache-dependency-path: "requirements.txt"  # 指定缓存依赖文件
 
-      # 安装 MkDocs 依赖（根据你的实际插件补充）
+      # 3. 安装 MkDocs 依赖（从 requirements.txt 安装，更稳定）
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material
-          # 如果你有其他插件，比如 mkdocs-git-revision-date-plugin，取消下面注释
-          # pip install mkdocs-git-revision-date-plugin
+          # 升级 pip 避免安装失败
+          python -m pip install --upgrade pip
+          # 从 requirements.txt 安装所有依赖（自动匹配版本）
+          pip install -r requirements.txt
 
-      # 构建并部署到 GitHub Pages
+      # 4. 显式构建 MkDocs 静态文件（便于排查构建错误）
+      - name: Build MkDocs site
+        run: mkdocs build --verbose  # 输出详细日志，方便定位问题
+
+      # 5. 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          # 可选：清理旧的 gh-pages 分支文件，避免冗余
+          force_orphan: true

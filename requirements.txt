@@ -1,0 +1,7 @@
+# MkDocs 核心依赖（固定版本避免兼容问题）
+mkdocs>=1.5.3
+mkdocs-material>=9.5.0
+
+# 如果你用到其他插件，取消下面注释并添加（示例）
+# mkdocs-git-revision-date-plugin>=1.2.0
+# mkdocs-glightbox>=0.3.4
