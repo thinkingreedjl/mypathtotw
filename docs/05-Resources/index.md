@@ -12,7 +12,7 @@ This section includes essential frameworks, professional references, real-world 
 - [Technical Writing Growth Framework: Competencies, Knowledge, Skills & Tools](./Competencies-Knowledge-Skills-Tools-Resource.md)  
   A complete checklist of core competencies, domain knowledge, practical skills, essential tools, and learning resources for technical writers.
 
-- [Git Operation Guide](./git-docs-guide.md)
+- [Git Operation Guide](./git-docs-guide.md)  
   Essential Git commands and workflows for documentation projects.
 
 - [Top Technical Writing Examples](./top-docs-examples.md)  
