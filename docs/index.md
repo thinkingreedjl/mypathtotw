@@ -1,4 +1,4 @@
-# 🚀 From Zero to Expert Technical Writer
+# 🚀 My Technical Writing Journey
 A systematic journey documenting the evolution from foundational knowledge to expert-level mastery in technical communication.
 
 Welcome to my personal technical writing portfolio and learning hub. This site tracks my structured path toward becoming a Principal-level Technical Writer, covering everything from fundamental concepts to advanced strategy and real-world project implementation.
@@ -76,6 +76,7 @@ Real-world projects to validate and showcase technical writing proficiency.
 Curated resources to inspire learning and connect with the broader industry.
 
 - [Overview](05-Resources/index.md)
+- [Technical Writing Growth Framework: Competencies, Knowledge, Skills & Tools](05-Resources/Competencies-Knowledge-Skills-Tools-Resource.md)
 - [Top Technical Writing Examples](05-Resources/top-docs-examples.md)
 - [Communities & Certifications](05-Resources/communities-certifications.md)
 - [Job Hunting & Portfolio Building](05-Resources/job-hunting-portfolio.md)
