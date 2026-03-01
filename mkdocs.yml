@@ -1,5 +1,5 @@
 # Site Metadata (核心站点信息)
-site_name: From Zero to Expert Technical Writer
+site_name: My Technical Writing Journey
 site_description: A curated learning path to master various essential skills for an Expert Technical Writer
 site_url: https://thinkingreedjl.github.io/mypathtotw/
 site_author: Jeremy Lv
@@ -48,6 +48,7 @@ nav:
   - Industry Resources:
     - Overview: 05-Resources/index.md
     - "Technical Writing Growth Framework: Competencies, Knowledge, Skills & Tools": 05-Resources/Competencies-Knowledge-Skills-Tools-Resource.md
+    - Git Operation Guide: 05-Resources/git-docs-guide.md
     - Top Technical Writing Examples: 05-Resources/top-docs-examples.md
     - Industry Communities & Certifications: 05-Resources/communities-certifications.md
     - Job Hunting & Portfolio Building: 05-Resources/job-hunting-portfolio.md
