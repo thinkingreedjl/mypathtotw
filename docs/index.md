@@ -77,6 +77,7 @@ Curated resources to inspire learning and connect with the broader industry.
 
 - [Overview](05-Resources/index.md)
 - [Technical Writing Growth Framework: Competencies, Knowledge, Skills & Tools](05-Resources/Competencies-Knowledge-Skills-Tools-Resource.md)
+- [Git Operation Guide](05-Resources/git-docs-guide.md)
 - [Top Technical Writing Examples](05-Resources/top-docs-examples.md)
 - [Communities & Certifications](05-Resources/communities-certifications.md)
 - [Job Hunting & Portfolio Building](05-Resources/job-hunting-portfolio.md)
