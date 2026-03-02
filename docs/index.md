@@ -96,4 +96,4 @@ Curated resources to inspire learning and connect with the broader industry.
 
 ---
 
-*Built with Docs as Code. Tracking the path from Zero to Expert.*
+*Built with Docs as Code. Tracking my technical writing journey.*
