@@ -1,6 +1,7 @@
 # Technical Writer · 能力·知识·技能·工具·资源清单
 
 > 本清单每半年至少评审一次，根据主流工具链和社区实践进行更新。
+> 
 > 设计逻辑：**能力为核心 → 知识打底 → 技能落地 → 工具支撑 → 资源随附**
 
 ---
@@ -12,6 +13,7 @@
 **说明**：根据用户角色和任务场景（用户旅程/任务旅程）设计文档结构和导航，而非按功能模块堆砌。
 
 **资源**：
+
 - [Write the Docs - Audience Guide](https://www.writethedocs.org/guide/audience/)
 - [Write the Docs - Software Documentation](https://www.writethedocs.org/guide/software-documentation/)
 - [Write the Docs - Guide Index](https://www.writethedocs.org/guide/index.html)
@@ -22,6 +24,7 @@
 **说明**：能从代码注释、设计文档、需求规格中提炼文档要点，而非仅依赖口头对齐。
 
 **资源**：
+
 - [Google Technical Writing](https://developers.google.com/tech-writing)
 
 ### 信息架构（IA）与结构化内容组织能力
@@ -29,6 +32,7 @@
 **说明**：掌握导航设计、面包屑、标签体系、内容分类等具体信息架构技能。
 
 **资源**：
+
 - [Write the Docs - Information Architecture](https://www.writethedocs.org/guide/information-architecture/)
 - [I'd Rather Be Writing - IA for Docs](https://idratherbewriting.com/2020/02/25/information-architecture-for-docs/)
 
@@ -37,6 +41,7 @@
 **说明**：能配置 CI/CD 中的文档检查流水线（lint、链接检查、Vale）；能编写文档测试用例、对步骤类文档进行逐条验证，并建立文档质量检查清单。
 
 **资源**：
+
 - [Write the Docs - Testing](https://www.writethedocs.org/guide/testing/)
 - [Write the Docs - Testing Tools](https://www.writethedocs.org/guide/tools/testing.html)
 
@@ -45,6 +50,7 @@
 **说明**：能发起评审会、需求澄清会，高效向研发提问，推动确认与闭环；能设计并落地文档评审流程（自评 → 同行评审 → 研发评审 → 发布），明确评审角色与检查项。
 
 **资源**：
+
 - [Google Technical Writing One](https://developers.google.com/tech-writing/one)
 - [Write the Docs - Communication](https://www.writethedocs.org/guide/communication/)
 - [I'd Rather Be Writing - API Doc Review Processes](https://idratherbewriting.com/learnapidoc/docapis_review_processes.html)
@@ -54,6 +60,7 @@
 **说明**：能制定与维护团队风格指南，掌握中英日多语言内容维护流程。
 
 **资源**：
+
 - [Google Developer Style Guide](https://developers.google.com/style)
 - [Google - Creating Maintainable Documentation](https://developers.google.com/tech-writing/creating-maintainable-documentation)
 - [Microsoft Style Guide (EN)](https://learn.microsoft.com/en-us/style-guide/)
@@ -64,6 +71,7 @@
 **说明**：能用 MkDocs / Docusaurus / VitePress 搭建作品集并部署到 GitHub Pages / Netlify / Vercel。
 
 **资源**：
+
 - [Write the Docs - Portfolios](https://www.writethedocs.org/guide/getting-a-job/portfolios/)
 
 ### 文档效果度量与数据驱动优化能力
@@ -71,6 +79,7 @@
 **说明**：能通过搜索日志、停留时间、反馈数据等度量文档效果，并据此制定迭代策略。
 
 **资源**：
+
 - [Write the Docs - Measuring Documentation Effectiveness](https://www.writethedocs.org/guide/measuring-documentation-effectiveness/)
 
 ---
@@ -80,6 +89,7 @@
 ### 技术写作核心原则（用户任务、清晰准确、可复现、完整）
 
 **资源**：
+
 - [Google Technical Writing](https://developers.google.com/tech-writing)
 
 ### Diátaxis 文档框架与四大文档类型（Tutorial/How-To/Concept/Reference）
@@ -87,6 +97,7 @@
 **说明**：按学习/行动/理解/参考四象限选择写作策略。
 
 **资源**：
+
 - [Diátaxis Framework](https://diataxis.fr/)
 - [Write the Docs - Documentation Types](https://www.writethedocs.org/guide/types/)
 - [CSDN - Diátaxis Framework](https://blog.csdn.net/gitblog_00763/article/details/142837774)
@@ -96,6 +107,7 @@
 **说明**：了解文档开发生命周期（DDLC）各阶段任务：需求分析、规划、撰写、评审、发布、维护、评估与废弃。
 
 **资源**：
+
 - [Write the Docs - Documentation Lifecycle](https://www.writethedocs.org/guide/lifecycle/)
 - [ClickHelp - DDLC for Technical Writers](https://clickhelp.com/clickhelp-technical-writing-blog/document-development-life-cycle-ddlc-for-technical-writers/)
 
@@ -104,6 +116,7 @@
 **说明**：能判断场景选择 DITA/XML 或 Markdown+SSG。
 
 **资源**：
+
 - [OASIS DITA Committee](https://www.oasis-open.org/committees/dita/)
 - [Markdown Guide](https://www.markdownguide.org/)
 
@@ -112,6 +125,7 @@
 **说明**：维护术语库、禁用词与过时术语清单，确保全文档统一。
 
 **资源**：
+
 - [Chinese Copywriting Guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines)
 - [IBM Style Guide](https://www.ibm.com/docs/en/ibm-style-guide)
 
@@ -125,6 +139,7 @@
 - **日志**：基础报错识别，支撑 Troubleshooting
 
 **资源**：
+
 - [MDN Web Docs](https://developer.mozilla.org/zh-CN/docs/Learn)
 - [菜鸟教程](https://www.runoob.com/)
 
@@ -133,6 +148,7 @@
 **说明**：分支策略、PR 模板、自动构建、预览与发布流程。
 
 **资源**：
+
 - [Write the Docs - Docs as Code](https://www.writethedocs.org/guide/docs-as-code/)
 - [Git Book (中文)](https://git-scm.com/book/zh/v2)
 
@@ -141,6 +157,7 @@
 **说明**：ICU 格式、字符串长度、文化禁忌、多语言同步机制。
 
 **资源**：
+
 - [Write the Docs - Localization](https://www.writethedocs.org/guide/localization/)
 
 ### 文档质量检查与评审体系
@@ -148,12 +165,14 @@
 **说明**：质量清单 + 自测 + 同行评审 + 研发评审 + 自动化检查。
 
 **资源**：
+
 - [Write the Docs - Reviewing](https://www.writethedocs.org/guide/reviewing/)
 - [TCB Labber Resources](https://resources.tcblabber.cn/)
 
 ### 可访问性（A11y）与 WCAG 核心原则及文档实践
 
 **资源**：
+
 - [WCAG 2.1 (中文)](https://w3c.github.io/WCAG21-zh/)
 - [WAI - Web Accessibility Initiative](https://www.w3.org/WAI/)
 
@@ -162,6 +181,7 @@
 **说明**：了解 DITA 在结构化写作中的角色，以及 S1000D 在航空航天/国防等高合规行业的典型应用场景。
 
 **资源**：
+
 - [S1000D](https://www.s1000d.org/)
 - [OASIS DITA Committee](https://www.oasis-open.org/committees/dita/)
 
@@ -174,22 +194,26 @@
 **说明**：能设计侧边栏导航、面包屑、页内目录、标签/分类体系，适配不同文档站点（SSG）。
 
 **资源**：
+
 - [Write the Docs - Structure](https://www.writethedocs.org/guide/structure/)
 
 ### 标准化、可复现技术写作（步骤、前提、结果、异常、预期输出）
 
 **资源**：
+
 - [Google Technical Writing](https://developers.google.com/tech-writing)
 
 ### 技术插图、流程图、架构图制作与视觉风格统一
 
 **资源**：
+
 - [Diagrams.net](https://app.diagrams.net/)
 - [Figma](https://www.figma.com/)
 
 ### 代码示例整理、最小可运行示例、注释与排版规范
 
 **资源**：
+
 - [Google Technical Writing - Code](https://developers.google.com/tech-writing/code)
 
 ### API 文档撰写（参数、请求、响应、错误码）与 OpenAPI 应用
@@ -197,6 +221,7 @@
 **说明**：能从 Swagger/OpenAPI 提取信息并使用 Redoc/Swagger UI 渲染；理解文档驱动设计（documentation-driven design），在 API 设计时同步撰写文档。
 
 **资源**：
+
 - [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
 - [Redoc Documentation](https://redocly.com/docs/redoc/)
 - [Write the Docs - Style Guides](https://www.writethedocs.org/guide/writing/style-guides.html)
@@ -204,37 +229,44 @@
 ### 文档自测、可复现验证与人工测试
 
 **资源**：
+
 - [Write the Docs - Testing](https://www.writethedocs.org/guide/testing/)
 
 ### 文档测试自动化与 CI/CD 流水线集成
 
 **资源**：
+
 - [Docs Like Code - Testable Documentation](https://www.docslikecode.com/book/testable-documentation.html)
 
 ### 结构化内容模型设计、复用与实施
 
 **资源**：
+
 - [OASIS DITA Committee](https://www.oasis-open.org/committees/dita/)
 
 ### 评审执行、反馈处理、修订闭环与 PR 检查清单
 
 **资源**：
+
 - [TCB Labber Resources](https://resources.tcblabber.cn/)
 
 ### Git 版本控制、PR 协作、冲突处理与自动发布部署
 
 **资源**：
+
 - [GitHub Docs (中文)](https://docs.github.com/zh/get-started)
 
 ### 风格检查、链接校验、格式规范化（Vale、markdownlint、Prettier）
 
 **资源**：
+
 - [Vale](https://vale.sh/)
 - [markdownlint](https://github.com/DavidAnson/markdownlint)
 
 ### 多语言术语统一、本地化协作与翻译配合
 
 **资源**：
+
 - [Write the Docs - Localization](https://www.writethedocs.org/guide/localization/)
 
 ### 故障排查（Troubleshooting）与 FAQ 文档撰写
@@ -242,12 +274,14 @@
 **说明**：能按"问题 → 现象 → 原因 → 解决方案 → 预防措施"结构编写 Troubleshooting 文档。
 
 **资源**：
+
 - [Write the Docs - Troubleshooting](https://www.writethedocs.org/guide/troubleshooting/)
 - [Write the Docs - Documenting Known Issues](https://www.writethedocs.org/videos/prague/2018/it-s-a-feature-documenting-known-issues-and-product-shortcomings-ivana-devcic.html)
 
 ### 文档版本管理、产品版本对齐与废弃文档策略
 
 **资源**：
+
 - [Write the Docs - Maintenance](https://www.writethedocs.org/guide/lifecycle/maintenance/)
 
 ---
@@ -279,6 +313,7 @@
 - [Sphinx](https://www.sphinx-doc.org/)
 
 **资源（选型对比）**：
+
 - [Write the Docs - Choosing Tools](https://www.writethedocs.org/guide/choosing-tools.html)
 
 ### 协作与知识库平台
@@ -314,6 +349,7 @@
 - [Loom](https://www.loom.com/)
 
 **资源（图标库）**：
+
 - [Material Design Icons](https://fonts.google.com/icons)
 
 ### 语言、翻译与润色
