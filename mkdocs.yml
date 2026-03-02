@@ -105,7 +105,8 @@ extra:
       link: https://github.com/thinkingreedjl
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/jeremy-l-65042890
-
+  copyright: "All content on this site is for reference only. Unauthorized use or reproduction requires proper attribution to the original author and source."
+  
 # Markdown Extensions（核心修复：更新 emoji 引用路径）
 markdown_extensions:
   - admonition

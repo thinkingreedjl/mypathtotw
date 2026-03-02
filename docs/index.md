@@ -5,7 +5,7 @@ Welcome to my personal technical writing portfolio and learning hub. This site t
 
 ---
 
-## 📘 **Foundations**
+## 📘 Foundations
 **Building the Base**  
 Establishing the core identity and framework of a technical writer.
 
@@ -16,37 +16,41 @@ Establishing the core identity and framework of a technical writer.
 
 ---
 
-## 🛠️ **Core Technical Writing Skills**
+## 🛠️ Core Technical Writing Skills
 **The Essential Toolkit**  
 Mastering the fundamental skills, tools, and literacy required for professional technical writing.
 
 - [Overview](02-Core-Skills/index.md)
 
-### ✍️ **Writing Fundamentals**
+### ✍️ Writing Fundamentals
+
 - [Style & Grammar Guidelines](02-Core-Skills/writing-fundamentals/style-grammar-guidelines.md)
 - [Audience Analysis & Content Strategy](02-Core-Skills/writing-fundamentals/audience-analysis.md)
 - [Structured Writing & IA](02-Core-Skills/writing-fundamentals/structured-writing.md)
 - [Terminology Management](02-Core-Skills/writing-fundamentals/terminology-management.md)
 
-### 💻 **Technical Literacy**
+### 💻 Technical Literacy
+
 - [Basic Programming Concepts](02-Core-Skills/technical-literacy/basic-programming.md)
 - [API Documentation (REST/GraphQL)](02-Core-Skills/technical-literacy/api-documentation.md)
 - [SDLC Basics](02-Core-Skills/technical-literacy/sdlc-basics.md)
 
-### 🧰 **Documentation Tools**
+### 🧰 Documentation Tools
+
 - [Static Site Generators](02-Core-Skills/tools/static-site-generators.md)
 - [Version Control (Git)](02-Core-Skills/tools/version-control.md)
 - [Authoring Tools (Asciidoctor/XML)](02-Core-Skills/tools/authoring-tools.md)
 - [Visual & Video Tools](02-Core-Skills/tools/visual-video-tools.md)
 
-### 🚀 **Content Delivery**
+### 🚀 Content Delivery
+
 - [Multi-Format Publishing](02-Core-Skills/delivery/multi-format-publishing.md)
 - [Localization & i18n](02-Core-Skills/delivery/localization-i18n.md)
 - [Accessibility (WCAG)](02-Core-Skills/delivery/accessibility.md)
 
 ---
 
-## 🏆 **Advanced Expert Skills**
+## 🏆 Advanced Expert Skills
 **Leveling Up to Expert**  
 Delving into strategic planning, automation, and cross-functional collaboration.
 
@@ -59,7 +63,7 @@ Delving into strategic planning, automation, and cross-functional collaboration.
 
 ---
 
-## 🧪 **Practical Projects**
+## 🧪 Practical Projects
 **Apply & Demonstrate Skills**  
 Real-world projects to validate and showcase technical writing proficiency.
 
@@ -71,7 +75,7 @@ Real-world projects to validate and showcase technical writing proficiency.
 
 ---
 
-## 📚 **Industry Resources**
+## 📚 Industry Resources
 **References & Community**  
 Curated resources to inspire learning and connect with the broader industry.
 
@@ -85,6 +89,7 @@ Curated resources to inspire learning and connect with the broader industry.
 ---
 
 ## 🌐 Connect With Me
+
 - 🐙 **GitHub**: [My GitHub Repository](https://github.com/thinkingreedjl/mypathtotw)
 - 💼 **LinkedIn**: [Jeremy Lv](https://linkedin.com/in/jeremy-l-65042890)
 - 📧 **Email**: [jeremylvjj@163.com](mailto:jeremylvjj@163.com)
