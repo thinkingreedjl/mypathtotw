@@ -8,7 +8,7 @@
 - **Windows 系统**：访问 [Git 官方网站](https://git-scm.com/downloads) 下载安装程序，按向导完成安装。
 - **macOS 系统**：使用 Homebrew 安装，终端执行 `brew install git`。
 - **Linux 系统**：
-- 
+
   - Debian/Ubuntu：`sudo apt-get install git`
   - Red Hat/CentOS：`sudo yum install git`
 
